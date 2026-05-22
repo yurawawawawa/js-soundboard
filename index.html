@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOUNDBOARD GOKIL</title>
+    <meta
+      name="description"
+      content="A futuristic, dynamic-theme meme soundboard featuring high-fidelity synthesized sound effects and reactive visualizer."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme-default">
+    <div class="background-glow"></div>
+
+    <main class="dashboard">
+      <!-- Dashboard Header -->
+      <header class="dashboard-header">
+        <div class="header-main">
+          <div class="brand">
+            <span class="system-tag">ARGA YURA.INC</span>
+            <h1 class="dashboard-title">
+              SOUNDBOARDGOKIL <span class="model-num">2.0</span>
+            </h1>
+          </div>
+          <div class="status-panel">
+            <div class="status-indicator">
+              <span class="status-led"></span>
+              <span class="status-text" id="status-display">SYSTEM: IDLE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equalizer Visualizer -->
+        <div class="visualizer" id="equalizer">
+          <div class="vis-bar" style="--i: 1"></div>
+          <div class="vis-bar" style="--i: 2"></div>
+          <div class="vis-bar" style="--i: 3"></div>
+          <div class="vis-bar" style="--i: 4"></div>
+          <div class="vis-bar" style="--i: 5"></div>
+          <div class="vis-bar" style="--i: 6"></div>
+          <div class="vis-bar" style="--i: 7"></div>
+          <div class="vis-bar" style="--i: 8"></div>
+          <div class="vis-bar" style="--i: 9"></div>
+          <div class="vis-bar" style="--i: 10"></div>
+          <div class="vis-bar" style="--i: 11"></div>
+          <div class="vis-bar" style="--i: 12"></div>
+        </div>
+      </header>
+
+      <!-- MPC Pad Grid -->
+      <section class="pad-grid">
+        <button class="sound-pad" data-sound="vineboom" id="pad-vineboom">
+          <span class="pad-num">PAD A01</span>
+          <span class="pad-icon">💥</span>
+          <span class="pad-name">VINE BOOM</span>
+          <span class="pad-glow"></span>
+        </button>
+
+        <button class="sound-pad" data-sound="bruh" id="pad-bruh">
+          <span class="pad-num">PAD A02</span>
+          <span class="pad-icon">💀</span>
+          <span class="pad-name">BRUH</span>
+          <span class="pad-glow"></span>
+        </button>
+
+        <button class="sound-pad" data-sound="woah" id="pad-woah">
+          <span class="pad-num">PAD A03</span>
+          <span class="pad-icon">✨</span>
+          <span class="pad-name">WOW / WOAH</span>
+          <span class="pad-glow"></span>
+        </button>
+
+        <button class="sound-pad" data-sound="laugh" id="pad-laugh">
+          <span class="pad-num">PAD A04</span>
+          <span class="pad-icon">🤣</span>
+          <span class="pad-name">LAUGH</span>
+          <span class="pad-glow"></span>
+        </button>
+      </section>
+
+      <!-- Dashboard Controls -->
+      <footer class="control-panel">
+        <div class="control-group">
+          <label for="volume-control">
+            <span class="control-label"></span>KEKENCENGAN GAKKK?
+            <span class="control-val" id="volume-val">80%</span>
+          </label>
+          <input
+            type="range"
+            id="volume-control"
+            class="range-slider"
+            min="0"
+            max="1"
+            step="0.05"
+            value="0.8"
+            aria-label="Master Volume"
+          />
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
