@@ -16,8 +16,10 @@ const soundPads = document.querySelectorAll('.sound-pad');
 
 // Map sound pad data-sound to local audio file paths
 const soundFiles = {
-  'vineboom': 'Vine boom sound effect.mp3',
-  'laugh': 'Frog Laughing - Sound Effect.mp3'
+  'vineboom': 'Sounds/Vine boom sound effect.mp3',
+  'laugh': 'Sounds/Frog Laughing - Sound Effect.mp3',
+  'woah': 'Sounds/Wow sound effect.mp3',
+  'bruh': 'Sounds/Bruh sound effect.mp3'
 };
 
 /* ==========================================================================
